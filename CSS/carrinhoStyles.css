@@ -12,7 +12,7 @@
     border-radius: 10px ;
     border: 1px solid var(--dsc-color-card-border);
     background-color: var(--dsc-color-card-bg);
-    height: 200px;
+    
 }
 
 
@@ -21,9 +21,9 @@
                                                     /*  PRODUCT CARD STYLES */
 
 .carrinho-display{
-    height: 80px;
+    
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     border-bottom: 1px solid var(--dsc-color-card-border);
     padding: 0 20px;
 }
@@ -61,8 +61,12 @@
     color: var(--dsc-color-font-secondary) ;
     font-size: 12px;
     font-weight: 700;
-    padding: 10px 20px;
+    
 }
+.carrinho-display-right{
+    padding-bottom: 10px;
+}
+
 
 .carrinho-ammount{
     padding: 0 10px;
@@ -87,12 +91,27 @@
 
 
 .carrinho-sum{
-    padding:10px 20px 10px 20px;
+    padding:10px 20px;
 }
 .carrinho-sum h3{
-    text-align: right;
+    text-align: left;
     font-size: 16px;
 }
 
+
+
+@media (min-width: 576px){
+    .carrinho-display-right{
+        padding: 10px 20px;
+    }
+
+    .carrinho-sum h3{
+        text-align: right;
+    }
+    .carrinho-display{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
 
 
