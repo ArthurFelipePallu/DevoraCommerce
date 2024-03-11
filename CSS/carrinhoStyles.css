@@ -1,0 +1,98 @@
+
+@import url("styles.css");
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+                                                    /*  CONTAINER STYLES */
+
+.carrinho-container{
+    margin-top: 40px;
+    border-radius: 10px ;
+    border: 1px solid var(--dsc-color-card-border);
+    background-color: var(--dsc-color-card-bg);
+    height: 200px;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+                                                    /*  PRODUCT CARD STYLES */
+
+.carrinho-display{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--dsc-color-card-border);
+    padding: 0 20px;
+}
+.carrinho-display-left{
+    display: flex;
+
+}
+.carrinho-display-left img{
+    width: 78px;
+    height: 78px;
+}
+.carrinho-information{
+    width: 860px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.carrinho-qtd{
+    height: 22px;
+    width: 32px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.carrinho-nome{
+    color: var(--dsc-color-font-primary) ;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 10px;
+}
+.carrinho-preco{
+    color: var(--dsc-color-font-secondary) ;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+
+.carrinho-ammount{
+    padding: 0 10px;
+    color:  var(--dsc-color-font-primary);
+}
+.carrinho-modifier{
+    width: 26px;
+    height: 26px;
+    color:var(--dsc-color-btn-primary) ;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 0 10px;
+    border: 1px solid var(--dsc-color-btn-primary);
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+                                                    /*  VALOR TOTAL STYLES */
+
+
+
+.carrinho-sum{
+    padding:10px 20px 10px 20px;
+}
+.carrinho-sum h3{
+    text-align: right;
+    font-size: 16px;
+}
+
+
+
