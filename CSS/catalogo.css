@@ -1,0 +1,36 @@
+@import url("styles.css");
+
+#catalogo-section{
+    padding: 20px 0;
+    align-items: center;
+    justify-content: center;  
+}
+.barra-pesquisa{
+    height: 40px;
+    width: 80%;
+    border: 1px 0 1px 0;
+    border-color: var(--dsc-color-card-border);
+    display: flex;
+ 
+}
+
+#devcom-btn-submit{
+    border: 1px 0 1px 1px;
+    border-radius: 4px 0 0 4px;
+    border-color: var(--dsc-color-card-border);
+}
+
+.devcom-search-input{
+    height: 40px;
+    width: 200px;
+    color: var(--dsc-color-btn-inverse);
+    border: 1px 0 1px 0px; 
+    border-color: var(--dsc-color-card-border);
+}
+
+#devcom-btn-reset{
+    border: 1px 1px 1px 0;
+    border-radius: 0 4px 4px 0;
+    border-color: var(--dsc-color-card-border);
+
+}
