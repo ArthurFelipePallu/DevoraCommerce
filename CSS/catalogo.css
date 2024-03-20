@@ -2,35 +2,43 @@
 
 #catalogo-section{
     padding: 20px 0;
-    align-items: center;
-    justify-content: center;  
+
 }
-.barra-pesquisa{
-    height: 40px;
-    width: 80%;
-    border: 1px 0 1px 0;
-    border-color: var(--dsc-color-card-border);
+
+
+
+
+
+/* =========================================================================================================================================================*/
+/* CARD DE ITENS DO CATALOGO*/
+.devcom-catalog-card{
+    border-radius: 10px ;
+    border: 1px solid var(--dsc-color-card-border);
+    background-color: var(--dsc-color-card-bg);
+    max-width: 280px;
+    max-height: 280px;
+}
+
+.devcom-catalog-card-top{
     display: flex;
- 
+    justify-content: center;
+    padding: 10px;
+}
+.devcom-catalog-card-top img{
+    width: 150px;
+    height: 150px;
 }
 
-#devcom-btn-submit{
-    border: 1px 0 1px 1px;
-    border-radius: 4px 0 0 4px;
-    border-color: var(--dsc-color-card-border);
+.devcom-catalog-card-bottom{
+    border-top: 1px solid var(--dsc-color-card-border);
+    padding: 10px 20px;
+    min-height: 110px;
 }
 
-.devcom-search-input{
-    height: 40px;
-    width: 200px;
-    color: var(--dsc-color-btn-inverse);
-    border: 1px 0 1px 0px; 
-    border-color: var(--dsc-color-card-border);
-}
 
-#devcom-btn-reset{
-    border: 1px 1px 1px 0;
-    border-radius: 0 4px 4px 0;
-    border-color: var(--dsc-color-card-border);
 
+.devcom-catalog-cards{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(225px,1fr));
 }

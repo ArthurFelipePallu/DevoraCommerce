@@ -18,7 +18,8 @@
     --dsc-color-font-primary: #636363;
     --dsc-color-font-secondary: #0caf1d;
     --dsc-color-font-tertiary: #fff;
-    
+    --dsc-color-font-placeholder: #d9d9d9;
+
 }
 
 *{
@@ -56,7 +57,6 @@ header{
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
-    
 }
 nav{
     color: var(--dsc-color-font-primary);
@@ -168,4 +168,49 @@ a,a:hover /* afeta links e quando eles estão com mouse por cima deles*/
     width: 40px;
     cursor: pointer;
 
+}
+
+/* =========================================================================================================================================================*/
+/* BARRA DE PESQUISA*/
+.barra-pesquisa{
+    height: 40px;
+    border: 1px 0 1px 0;
+    border-color: var(--dsc-color-card-border);
+    display: flex;
+}
+
+#devcom-btn-submit{
+    width: 40px;
+    border: 1px 0 1px 1px;
+    border-radius: 4px 0 0 4px;
+    border-color: var(--dsc-color-card-border);
+    border-right: none;
+}
+
+.devcom-search-input{
+    height: 40px;
+    width: calc( 100% - 80px );
+    color: var(--dsc-color-font-primary);
+    background-color: var(--dsc-color-btn-inverse);
+    border: 1px 0 1px 0px; 
+    border-color: var(--dsc-color-card-border);
+    border-left: none;
+    border-right: none;
+    padding: 0 10px;
+    font-size: 16px;
+
+}
+.devcom-search-input:focus{
+    outline: none;
+}
+.devcom-search-input::placeholder{
+    color: var(--dsc-color-font-placeholder);
+}
+
+#devcom-btn-reset{
+    width: 40px;
+    border: 1px 1px 1px 0;
+    border-radius: 0 4px 4px 0;
+    border-color: var(--dsc-color-card-border);
+    border-left: none;
 }
