@@ -74,20 +74,48 @@ nav a{
 }
 
 .devcom-nav-btn{
+    width: 92px;
+    height: 35px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;  
+    flex-direction: column;
+    align-items: end;
 }
 .devcom-nav-btn a{
-    padding: 0 10px;
+    
 }
 a,a:hover /* afeta links e quando eles estão com mouse por cima deles*/
 {
     text-decoration: none;/* tira a decoração do texto , retornando a uma aparência normal*/
     color: unset; /*nao muda a cor do link */
 }
+.devcom-nav-divs{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
 
+.devcom-nav-icons{
 
+    width: 60px;
+    height: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.devcom-nav-icons a{
+    width: 20px;
+    height: 20px;
+}
+
+.devcom-user-name{
+    font-size: 12px;
+    font-weight: 400;
+    text-align: right;
+
+}
+
+.devcom-entrada-saida{
+    text-align: right;
+}
 
 
 /*------------------------------------------------------------------------------------------------------------------*/
