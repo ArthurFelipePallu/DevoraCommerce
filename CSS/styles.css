@@ -170,7 +170,6 @@ a,a:hover /* afeta links e quando eles estão com mouse por cima deles*/
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
     cursor: pointer;
 }
 @media (min-width: 576px){

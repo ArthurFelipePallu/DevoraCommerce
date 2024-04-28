@@ -1,0 +1,53 @@
+@import url("styles.css");
+
+#product-form-section{
+    padding: 20px 0;
+}
+
+.devcom-product-form-container{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.devcom-product-form-btn{
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(210px,1fr));
+}
+
+
+
+.devcom-select:invalid{
+    color: var(--dsc-color-font-placeholder);
+}
+
+
+.devcom-select option[disabled]{
+   display: none;
+}
+.devcom-select option{
+    color: var(--dsc-color-font-primary);
+}
+
+.devcom-textarea{
+    resize: none;
+    height: 128px;
+    padding-top: 10px;
+
+}
+
+
+
+@media (min-width: 576px){
+
+    #product-form-section{
+        padding: 40px 0;
+    }
+        
+    .devcom-product-form-btn{
+        width: 100%;    
+        
+    }
+}
