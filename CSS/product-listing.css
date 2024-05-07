@@ -1,0 +1,24 @@
+@import url("styles.css");
+
+#product-listing-section{
+    padding: 20px 0;
+
+}
+
+.devcom-product-listing-img{
+    margin-left: 30px;
+    width: 69px;
+    height: 69px;
+}
+
+
+.devcom-product-listing-table-icon{
+    height: 20px;
+    width: auto;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.devcom-product-listing-table-id{
+    padding-left: 10px;
+}
