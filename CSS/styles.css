@@ -8,6 +8,7 @@
     --dsc-color-bg-primary: #e8e8e8;
     --dsc-color-bg-secondary: #ffe500;
     --dsc-color-bg-terciary: #636363;
+    --dsc-color-font-quaternary: #0caf1d;
 
     --dsc-color-card-bg: #fff;
     --dsc-color-card-border: #d9d9d9;
@@ -48,25 +49,33 @@ main{
 /*------------------------------------------------------------------------------------------------------------------*/
                                                     /*  HEADER STYLES */
 header{
-    background-color: var(--dsc-color-bg-secondary);
     height: 70px;
     display: flex;
     align-items: center;
     padding: 0 20px;
 }
+
+.devcom-header-client{
+    background-color: var(--dsc-color-bg-secondary);
+    color: var(--dsc-color-font-primary);
+}
+.devcom-header-admin{
+    background-color: var(--dsc-color-font-quaternary);
+    color: var(--dsc-color-font-tertiary);
+}
+
 .devcom-container{
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
 }
 nav{
-    color: var(--dsc-color-font-primary);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 nav h1{
-    font-size: 24px;
+    font-size: 16px;
 }
 nav a{
     font-size: 14px;
@@ -106,6 +115,31 @@ a,a:hover /* afeta links e quando eles estão com mouse por cima deles*/
     height: 20px;
 }
 
+.devcom-navbar-right{
+    display: flex;
+    align-items: center;
+}
+.devcom-menu-item{
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+.devcom-menu-item img{
+    width: 20px;
+    height: 20px;
+}
+
+.devcom-menu-item p{
+    display: none;
+    font-size: 14px;
+    margin-left:5px;
+}
+.devcom-menu-item-active{
+    font-weight: 700;
+}
+
+
+
 .devcom-user-name{
     font-size: 12px;
     font-weight: 400;
@@ -129,6 +163,17 @@ a,a:hover /* afeta links e quando eles estão com mouse por cima deles*/
 
 .devcom-txt-left{
     text-align: left;
+}
+
+
+
+@media (min-width: 576px) {
+        nav h1{
+            font-size: 24px;
+        }
+        .devcom-menu-item p{
+            display: unset;
+        }
 }
 
 
